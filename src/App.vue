@@ -1,20 +1,17 @@
 <template>
   <div id="app">
-    <img class="text-center" alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <Catalogue /> 
+    <!-- <Catalogue />  -->
+    <CatalogueAxios />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import Catalogue from './components/Catalogue.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld,
-    Catalogue
+    // Catalogue: () => import('./components/Catalogue')
+    CatalogueAxios: () => import('./components/CatalogueAxios')
   }
 }
 </script>
